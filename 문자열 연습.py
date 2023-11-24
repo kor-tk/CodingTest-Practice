@@ -22,7 +22,7 @@ e = input()   # input() 함수는 입력함수. 전달하는 데이터의 형식
 if(e.isalpha()):
     print('문자입니다. {0}'.format(e))
     print(type(e))  # type=str
-elif(e.isnumeric()):
+elif(e.isdecimal()):
     print('숫자입니다. {0}'.format(e))
     print(type(e))  # type=str
 print()
