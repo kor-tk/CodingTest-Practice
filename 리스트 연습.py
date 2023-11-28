@@ -66,3 +66,32 @@ a = ['안', '녕', '하', '세', '요']
 print('원본 a = ', a)
 a.reverse()   # 리스트.reverse() : 리스트 내 요소의 순서를 반대로 뒤집는다.
 print('a.reverse() 사용 후 = ', a)   # 함수 설명에 (method) def reverse() -> None   여기서  -> None 뜻이 반환값(return 값)이 없다는 거구나..
+
+
+# 2차원 리스트 연습
+print('2차원 리스트 연습')
+two_dimention_list = []  # 기본 1차원 리스트 초기화
+two_dimention_list.append([])  # append()함수를 써서 
+
+two_dimention_list[0].append(0)
+two_dimention_list.append(0)
+print(two_dimention_list)
+print()
+
+two_dimention_list = []  # TODO: 이렇게 하면 위에 선언 했던 변수가 지워지고 새롭게 정의되는건가? 알아보자
+print('n x n 리스트 만들 숫자를 입력하시오 :')
+n = int(input().strip())  # 입력 받음과 동시에 공백이 있으면 제거.
+
+for i in range(n):
+    two_dimention_list.append([])  # ?? 이렇게하면 동적으로 생성되나??
+    for j in range(n):
+        two_dimention_list[i].append(0)
+
+print('만들어진 리스트 : {0} x {1}, lengh={2}, type={3}'.format(len(two_dimention_list), len(two_dimention_list[0]), len(two_dimention_list), type(two_dimention_list)))
+# 아.. 이제야 동적으로 2차원으로 리스트 만드는게 이해가 되네..
+
+for i in range(len(two_dimention_list)):
+    for j in range(len(two_dimention_list[i])):
+        print('{0}'.format(two_dimention_list[i][j]), end=' ')
+    print()
+print()
