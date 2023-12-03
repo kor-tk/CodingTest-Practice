@@ -79,7 +79,7 @@ print(two_dimention_list)
 print()
 
 two_dimention_list = []  # TODO: 이렇게 하면 위에 선언 했던 변수가 지워지고 새롭게 정의되는건가? 알아보자
-print('n x n 리스트 만들 숫자를 입력하시오 :')
+print('n x n 리스트 만들 숫자를 입력하시오 : ', end='')  # 입력 받기 전 end='' 옵션 넣으면 한줄에 이쁘게 입력할 수 있다
 n = int(input().strip())  # 입력 받음과 동시에 공백이 있으면 제거.
 
 for i in range(n):
