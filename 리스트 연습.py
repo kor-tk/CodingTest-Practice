@@ -69,6 +69,7 @@ print('a.reverse() 사용 후 = ', a)   # 함수 설명에 (method) def reverse(
 
 
 # 2차원 리스트 연습
+
 print('2차원 리스트 연습')
 two_dimention_list = []  # 기본 1차원 리스트 초기화
 two_dimention_list.append([])  # append()함수를 써서 
@@ -77,6 +78,7 @@ two_dimention_list[0].append(0)
 two_dimention_list.append(0)
 print(two_dimention_list)
 print()
+
 
 two_dimention_list = []  # TODO: 이렇게 하면 위에 선언 했던 변수가 지워지고 새롭게 정의되는건가? 알아보자
 print('n x n 리스트 만들 숫자를 입력하시오 : ', end='')  # 입력 받기 전 end='' 옵션 넣으면 한줄에 이쁘게 입력할 수 있다
